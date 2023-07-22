@@ -5,12 +5,50 @@
 }
 
 body {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/landing.jpg");
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/landing.jpg");
     background-size: cover; 
     background-repeat: no=repeat; 
     background-position: center; 
     background-attachment: fixed; 
     height: 100vh; 
+    position: relative; 
+}
+
+#landing-container {
+    position: absolute; 
+    color: #fff; 
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex; 
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.button {
+    border: solid white 5px;
+    max-width: 50%; 
+    margin: auto; 
+    padding: 1rem 6rem;
+    color: #fff; 
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.2s; 
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: #fff; 
+    color: #000; 
+}
+
+.landing-text {
+    display: flex; 
+    flex-direction: column;
+    gap: 3rem;
 }
 
 nav {
