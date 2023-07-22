@@ -28,6 +28,11 @@ body {
     gap: 5vh;
 }
 
+#landing-container img {
+    max-width: 50%;
+    margin: auto; 
+}
+
 .button {
     border: solid white 5px;
     max-width: 50%; 
