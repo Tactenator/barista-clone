@@ -101,7 +101,7 @@ a:hover {
 }
 
 .hero-text {
-    width: 50%;
+    max-width: 50%;
 }
 
 .hero-text h2 {
@@ -129,12 +129,66 @@ a:hover {
     background-repeat: no=repeat; 
     background-position: center; 
     background-attachment: fixed; 
-    height: 100vh;
+    height: 70vh;
+    display: flex; 
+    flex-direction: row;
+    padding: 10rem; 
+    gap: 10vw; 
 }
 
-#container {
+#second-image img {
+    max-width: 50%; 
+    margin: 0 auto; 
+}
+
+.second-hero {
+    color: #fff; 
+    max-width: 50%;
+}
+
+.second-hero h1 {
+    padding: 3vh 0; 
+}
+
+.second-hero {
+    padding-bottom: 1rem; 
+}
+
+.button-v2 {
+    color: #fff; 
+    background-color: #c7a17a;
+    padding: 1rem 2.5rem; 
+    border: none; 
+    font-size: 1.2rem; 
+    margin-top: 1rem; 
+}
+
+#second-hero {
     background-color: #eae7de;  
-    height: 100vh; 
+    height: 130vh; 
+    padding: 10rem; 
+}
+
+.blurb-container {
+    display: flex; 
+    flex-direction: row;
+    margin: 0 auto; 
+    text-align: center;
+    margin-bottom: 20vh; 
+}
+
+.blurb {
+    max-width: inherit; 
+}
+
+.blurb-icon {
+    max-width: 35%; 
+}
+
+.slider-text-container {
+    background: url("../images/slider.jpg");
+    height: 55vh; 
+    max-width: 50%; 
 }
 
 footer {
