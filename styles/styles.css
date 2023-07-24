@@ -165,8 +165,8 @@ a:hover {
 
 #second-hero {
     background-color: #eae7de;  
-    height: 130vh; 
-    padding: 10rem; 
+    height: 140vh; 
+    padding: 5rem; 
 }
 
 .blurb-container {
@@ -179,20 +179,60 @@ a:hover {
 
 .blurb {
     max-width: inherit; 
+    padding: 3rem; 
 }
 
 .blurb-icon {
-    max-width: 35%; 
+    max-width: 30%; 
+}
+
+.blurb-title {
+    padding: 1rem 0;
+    font-size: 1.5rem; 
+    text-transform: uppercase; 
+}
+
+.blurb-text {
+    max-width: 70%; 
+    margin: auto; 
+    text-align: center;
+}
+
+#slider-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
 }
 
 .slider-text-container {
     background: url("../images/slider.jpg");
-    height: 55vh; 
-    max-width: 50%; 
+    height: auto;  
+    max-width: 100%; 
+}
+
+.slider-images {
+    transform: translateY(-10px);
+    width: 100%; 
+    height: auto; 
+}
+
+.slider-images img {
+    max-width: 100% ;
+    height: auto; 
 }
 
 footer {
     background: #1a1a1a;
     height: 60vh; 
-    padding: 5vh 5vw; 
+    padding: 5rem;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.hours-container, .news-container, .contact-container, .locations-container {
+    display: flex; 
+    flex-direction: column; 
+    gap: 2vh; 
+    color: #fff; 
 }
