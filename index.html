@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./dist/output.css">
     <title>Barista Clone - Index</title>
 </head>
-<body>
+<body class="relative overflow-x-hidden">
 
     <!-- Navbar  -->
-    <nav>
-        <h1>Coffee Shop</h1>
-        <ul class="links">
+    <nav class="flex flex-row justify-between p-5 relative z-10">
+        <h1 class="">Coffee Shop</h1>
+        <ul class="flex flex-row gap-5">
             <a href="./index.html"><li>Home</li></a>
             <a href="./pages/about.html"><li>About Us</li></a>
             <a href="./pages/menu.html"><li>Menu</li></a>
@@ -20,8 +20,8 @@
         </ul>
     </nav>
 
-    <div id="landing-page-container">
-        <div class="landing-container">
+    <div class="h-[100vh] absolute top-0 left-0 mb-[100vh] bg-landing-page bg-fixed bg-center bg-cover bg-no-repeat">
+        <div class="">
             <img src="./images/home-icon.png" alt="Landing Page Picture">
             <div class="landing-text">
                 <h1>Generic Coffee Shop</h1>
