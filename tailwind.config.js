@@ -1,13 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/*.{html,js}',
+    './src/**/*.',
     './index.html',
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'landing-page': "url('./images/landing.jpg')"
+      backgroundColor: {
+        "hero-background": "#eae7de"
+      },
+      colors: {
+        "gold-text": "#c7a17a"
       }
     },
   },

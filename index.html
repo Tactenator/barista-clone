@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./dist/output.css">
     <title>Barista Clone - Index</title>
 </head>
-<body class="relative overflow-x-hidden">
+<body class="relative overflow-x-hidden m-0 p-0 box-border bg-hero-background">
 
     <!-- Navbar  -->
     <nav class="flex flex-row justify-between p-5 relative z-10">
@@ -20,11 +20,12 @@
         </ul>
     </nav>
 
-    <div class="h-[100vh] absolute top-0 left-0 mb-[100vh] bg-landing-page bg-fixed bg-center bg-cover bg-no-repeat">
-        <div class="">
-            <img src="./images/home-icon.png" alt="Landing Page Picture">
-            <div class="landing-text">
-                <h1>Generic Coffee Shop</h1>
+    <div class="h-[100vh] w-[100vw] absolute top-0 left-0 bg-[url('../src/images/landing.jpg')] 
+    bg-fixed bg-center bg-cover bg-no-repeat ">
+        <div class="flex flex-col gap-10 w-1/4 items-center text-center absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
+            <img class="my-0 mx-auto" src="./src/images/home-icon.png" alt="Landing Page Picture">
+            <div class="text-white flex flex-col gap-5">
+                <h1 class="text-4xl">Generic Coffee Shop</h1>
                 <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo magnam blanditiis laborum non eius nihil expedita eum dolorem qui perspiciatis, deserunt a. </h2>
             </div>
             <a class="button" href="#">Read More</a>
@@ -32,10 +33,10 @@
     </div>
 
     <!-- Hero Container -->
-    <div id="hero">
-        <div class="hero-text">
-            <h2>Your Neighborhood Cafe</h2>
-            <div class="line"></div>
+    <div class="h-[100vh] mt-[100vh] bg-hero-background py-10 px-20">
+        <div class="flex flex-col items-center mb-20">
+            <h2 class="text-gold-text text-3xl pb-10">Your Neighborhood Cafe</h2>
+            <div class=""></div>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita eos accusantium temporibus cumque sit laborum nesciunt quam, qui delectus recusandae dolore facilis unde cum odit voluptatem, excepturi doloribus. Consequuntur, est? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur laudantium, aut dolorem enim quisquam laborum ad mollitia odit repellat? Sit excepturi tempore officiis similique quaerat libero id maxime ea quasi?
             </p>
@@ -43,20 +44,20 @@
         </div>
         <!-- Possible slide show here...-->
         
-        <div class="photo-grid">
-            <img class="grid-photo one" src="./images/grid-4.jpg" alt="No">
-            <img class="grid-photo two" src="./images/grid-4.jpg" alt="No">
-            <img class="grid-photo three" src="./images/grid-4.jpg" alt="No">
-            <img class="grid-photo four" src="./images/grid-4.jpg" alt="No">
-            <img class="grid-photo five" src="./images/grid-4.jpg" alt="No">
-            <img class="grid-photo six" src="./images/grid-4.jpg" alt="No">
+        <div class="grid grid-cols-3">
+            <img class="grid-photo one" src="./src/images/grid-4.jpg" alt="No">
+            <img class="grid-photo two" src="./src/images/grid-4.jpg" alt="No">
+            <img class="grid-photo three" src="./src/images/grid-4.jpg" alt="No">
+            <img class="grid-photo four" src="./src/images/grid-4.jpg" alt="No">
+            <img class="grid-photo five" src="./src/images/grid-4.jpg" alt="No">
+            <img class="grid-photo six" src="./src/images/grid-4.jpg" alt="No">
         </div>
         
     </div>
 
     <!-- Second Image Break -->
-    <div id="second-image">
-        <div class="second-image-text">
+    <div class="flex flex-row items-center justify-center gap-20 h-[70vh] mt-[50vh] bg-[url('../src/images/second.jpg')] bg-fixed bg-center bg-cover bg-no-repeat">
+        <div class="text-white w-1/2 flex flex-col gap-5">
             <h3>
                 Coffee
             </h3>
@@ -67,39 +68,41 @@
             </p>
             <a href="#"><button class="button-v2">Read More</button></a>
         </div>
-        <img src="./images/home-icon.png" alt="coffee">
+        <div>
+            <img src="./src/images/home-icon.png" alt="coffee">
+        </div>
     </div>
 
     <!-- Second Container -->
-    <div id="second-hero">
-        <div class="blurb-container">
-            <div class="blurb">
-                <img src="./images/coffee.svg" class="blurb-icon"></img>
-                <div class="blurb-title">Coffee</div>
-                <p class="blurb-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <div class="">
+        <div class="">
+            <div class="">
+                <img src="./images/coffee.svg" class=""></img>
+                <div class="">Coffee</div>
+                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
-            <div class="blurb">
-                <img src="./images/lunch.svg" class="blurb-icon"></img>
-                <div class="blurb-title">Coffee</div>
-                <p class="blurb-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+            <div class="">
+                <img src="./images/lunch.svg" class=""></img>
+                <div class="">Coffee</div>
+                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
             </div>
-            <div class="blurb">
-                <img src="./images/shopping.svg" class="blurb-icon"></img>
-                <div class="blurb-title">Coffee</div>
-                <p class="blurb-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <div class="">
+                <img src="./images/shopping.svg" class=""></img>
+                <div class="">Coffee</div>
+                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
-            <div class="blurb">
-                <img src="./images/events.svg" class="blurb-icon"></img>
-                <div class="blurb-title">Coffee</div>
-                <p class="blurb-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+            <div class="">
+                <img src="./images/events.svg" class=""></img>
+                <div class="">Coffee</div>
+                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
             </div>
         </div>
 
-        <div id="slider-container">
-            <div class="slider-text-container">
+        <div id="">
+            <div class="">
                 <img src="./images/slider.jpg">
             </div>
-            <div class="slider-images">
+            <div class="">
                 <img src="./images/slider-image-one.jpg" alt="group coffee">
             </div>
         </div>
