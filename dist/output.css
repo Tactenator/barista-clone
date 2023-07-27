@@ -534,6 +534,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -648,6 +682,18 @@ video {
   width: 100vw;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
+}
+
 .-translate-x-2\/4 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -702,6 +748,10 @@ video {
   gap: 2rem;
 }
 
+.gap-40 {
+  gap: 10rem;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -729,12 +779,25 @@ video {
   background-color: rgb(234 231 222 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/src\/images\/landing\.jpg\'\)\] {
   background-image: url('../src/images/landing.jpg');
 }
 
 .bg-\[url\(\'\.\.\/src\/images\/second\.jpg\'\)\] {
   background-image: url('../src/images/second.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/nav-backdrop\.jpg\'\)\] {
+  background-image: url('./images/nav-backdrop.jpg');
+}
+
+.bg-\[url\(\'\.\.\/src\/images\/nav-backdrop\.jpg\'\)\] {
+  background-image: url('../src/images/nav-backdrop.jpg');
 }
 
 .bg-cover {
@@ -769,6 +832,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-40 {
+  padding: 10rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -787,6 +854,16 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pb-10 {
@@ -815,6 +892,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-gold-text {

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../dist/output.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
-    <title>Barista Clone - Index</title>
-</head>
-<body>
-
-    <!-- Navbar  -->
-    <nav>
-        <h1>Coffee Shop</h1>
-        <ul class="links">
-            <a href="../index.html"><li>Home</li></a>
-            <a href="./about.html"><li>About Us</li></a>
-            <a href="./menu.html"><li>Menu</li></a>
-            <a href="./whats-new.html"><li>What's New</li></a>
-            <a href="./contact.html"><li>Contact</li></a>
-        </ul>
-    </nav>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+        <link rel="stylesheet" href="../../dist/output.css">
+        <title>Barista Clone - About</title>
+    </head>
+    <body class="bg-hero-background">
+    
+        <!-- Navbar  -->
+        <nav class="flex flex-row justify-between p-10 relative z-10 text-white text-2xl bg-[url('../src/images/nav-backdrop.jpg')] 
+        bg-fixed bg-center bg-cover bg-no-repeat ">
+            <h1 class="">Coffee Shop</h1>
+            <ul class="flex flex-row gap-8">
+                <a href="../../index.html"><li>Home</li></a>
+                <a href="./about.html"><li>About Us</li></a>
+                <a href="./menu.html"><li>Menu</li></a>
+                <a href="./whats-new.html"><li>What's New</li></a>
+                <a href="./contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
     <div id="landing-container">
         <img src="#" alt="Landing Page Picture">
         <div class="landing-text">
@@ -44,8 +44,83 @@
     </div>
 
     <!-- Footer Section  -->
-    <footer>
-
+    <footer class="bg-footer h-96 flex flex-row justify-around text-white p-20 ">
+        <div class="hours-container">
+            <h1>Hours</h1>
+            <div class="day-information">
+                <span class="day">Monday</span>
+                <span class="wh-line"></span>
+                <span class="hours">Closed</span>
+            </div>
+            <div class="day-information">
+                <span class="day">Tuesday</span>
+                <span class="wh-line"></span>
+                <span class="hours">9:00 A.M. - 10:00 P.M.</span>
+            </div>
+            <div class="day-information">
+                <span class="day">Wednesday</span>
+                <span class="wh-line"></span>
+                <span class="hours">9:00 A.M. - 10:00 P.M.</span>
+            </div>
+            <div class="day-information">
+                <span class="day">Monday</span>
+                <span class="wh-line"></span>
+                <span class="hours">9:00 A.M. - 10:00 P.M.</span>
+            </div>
+            <div class="day-information">
+                <span class="day">Monday</span>
+                <span class="wh-line"></span>
+                <span class="hours">9:00 A.M. - 10:00 P.M.</span>
+            </div>
+            <div class="day-information">
+                <span class="day">Monday</span>
+                <span class="wh-line"></span>
+                <span class="hours">9:00 A.M. - 10:00 P.M.</span>
+            </div>
+            <div class="day-information">
+                <span class="day">Monday</span>
+                <span class="wh-line"></span>
+                <span class="hours">9:00 A.M. - 10:00 P.M.</span>
+            </div>
+            
+        </div>
+        <div class="news-container">
+            <h1>News</h1>
+            <div class="news">
+                <h3>Something Something News</h3>
+                <span>1/1/1970</span>
+            </div>
+            <div class="news">
+                <h3>Something Something News</h3>
+                <span>1/1/1970</span>
+            </div>
+            <div class="news">
+                <h3>Something Something News</h3>
+                <span>1/1/1970</span>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Email</h2>
+                <a href="">coffee@coffee.com</a>
+            </div>
+            <div class="contact-info">
+                <h2>Phone Number</h2>
+                <a href="">555-555-5555</a>
+            </div>
+            <div class="contact-info">
+                <h2>Address</h2>
+                <a href="">123 Direction Lane<br>Omaha, NE 68116</a>
+            </div>
+        </div>
+        <div class="locations-container">
+            <h2>Other Locations</h2>
+            <h3>More Coffee</h3>
+            <span>123 Direction Lane<br>Omaha, NE 68116</span>
+            <span class="footer-line"></span>
+            <h3>More Coffee</h3>
+            <span>123 Direction Lane<br>Omaha, NE 68116</span>
+        </div>
     </footer>
 </body>
 </html>
