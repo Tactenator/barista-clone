@@ -24,24 +24,37 @@
     </nav>
 
     <div id="contact-container" class="grid grid-cols-2 px-20 py-10">
-        <div id="contact-form" class="flex flex-col gap-3">
+        <div id="contact-form" class="flex flex-col gap-3 p-10">
             <h1 class="text-3xl">Write Us</h1>
             <div class="" style="height: 2px; width: 30%; background-color: #c7a17a;"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil tenetur hic recusandae perspiciatis, error rem ipsam accusantium mollitia similique odio libero voluptatem, natus autem a consectetur, sapiente ut voluptatum.</p>
-            <form class="flex flex-col">
+            <form class="flex flex-col items-start w-full gap-1">
                 <label name="name">Name:</label>
-                <input type="text">
-                <label></label>
-                <input type="text">
-                <textarea></textarea>
+                <input type="text" class="w-96">
+                <label>Email: </label>
+                <input type="text" class="w-96">
+                <label>How can we help you?</label>
+                <textarea rows="4" cols="42"></textarea>
+                <button type="submit" class="mr-auto">Submit</button>
             </form>
         </div>
-        <div id="contact-information">
-            <h1>Locations</h1>
+        <div id="contact-information" class="flex flex-col gap-3 p-10">
+            <h1 class="text-3xl">Contact Information</h1>
+            <div class="" style="height: 2px; width: 30%; background-color: #c7a17a;"></div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, vitae. Ex, sunt earum? Hic sit ex nemo, omnis sunt minima, velit labore quam est ad magni quod? Itaque, illum asperiores.</p>
-            <div>Address</div>
-            <div>Telephone</div>
-            <div>Email</div>
+            <div class="">
+                <h2>Address</h2>
+                <p>1010 Fake Address St</p>
+                <p>Omaha, NE 68164</p>
+            </div>
+            <div>
+                <h2>Telephone</h2>
+                <p>404-444-4044</p>
+            </div>
+            <div>
+                <h2>Email</h2>
+                <p>coffeelover420@gmail.com</p>
+            </div>
         </div>
     </div>
 
