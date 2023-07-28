@@ -534,6 +534,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -604,16 +608,29 @@ video {
   margin-bottom: 0px;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .mt-\[100vh\] {
   margin-top: 100vh;
 }
 
-.mr-auto {
-  margin-right: auto;
+.mt-\[90vh\] {
+  margin-top: 90vh;
+}
+
+.mt-\[85vh\] {
+  margin-top: 85vh;
 }
 
 .box-border {
@@ -656,24 +673,16 @@ video {
   width: 40%;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .w-\[100vw\] {
   width: 100vw;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[100\%\] {
-  width: 100%;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-96 {
-  width: 24rem;
 }
 
 .min-w-fit {
@@ -731,6 +740,10 @@ video {
   justify-content: space-around;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -753,14 +766,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .overflow-x-hidden {
@@ -799,16 +804,8 @@ video {
   background-color: rgb(234 231 222 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/src\/images\/landing\.jpg\'\)\] {
-  background-image: url('../src/images/landing.jpg');
-}
-
 .bg-\[url\(\'\.\.\/src\/images\/nav-backdrop\.jpg\'\)\] {
   background-image: url('../src/images/nav-backdrop.jpg');
-}
-
-.bg-\[url\(\'\.\.\/src\/images\/second\.jpg\'\)\] {
-  background-image: url('../src/images/second.jpg');
 }
 
 .bg-cover {
