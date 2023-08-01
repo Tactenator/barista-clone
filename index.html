@@ -10,42 +10,48 @@
 <body class="relative overflow-x-hidden m-0 p-0 box-border bg-hero-background font-poppins">
 
     <!-- Navbar  -->
-    <nav class="flex flex-row justify-between p-10 relative z-10 text-white text-2xl">
+    <nav class="flex flex-row  justify-between items-center p-5 sm:p-10 relative z-10 text-white text-2xl">
         <h1 class="">Coffee Shop</h1>
-        <ul class="flex flex-row gap-8">
+        <ul class="hidden sm:flex sm:flex-row sm:gap-8">
             <a href="./index.html"><li>Home</li></a>
             <a href="./src/pages/about.html"><li>About Us</li></a>
             <a href="./src/pages/menu.html"><li>Menu</li></a>
             <a href="./src/pages/whats-new.html"><li>What's New</li></a>
             <a href="./src/pages/contact.html"><li>Contact</li></a>
         </ul>
+        <div id="hamburger" class="flex flex-col gap-1">
+            <span style="width: 32px; height: 3px; background: white;"></span>
+            <span style="width: 32px; height: 3px; background: white;"></span>
+            <span style="width: 32px; height: 3px; background: white;"></span>
+        </div>
     </nav>
 
-    <div class="h-[100vh] w-[100vw] absolute top-0 left-0"
+    <div class="h-[100vh] w-full absolute top-0 left-0"
     style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./src/images/landing.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
-        <div class="flex flex-col gap-10 w-1/4 items-center text-center absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
+        <div class="flex flex-col gap-10 w-3/4 sm:w-1/4 items-center text-center
+         absolute top-80 sm:top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4">
             <img class="my-0 mx-auto" src="./src/images/home-icon.png" alt="Landing Page Picture">
             <div class="text-white flex flex-col gap-5">
                 <h1 class="text-4xl font-bold">Generic Coffee Shop</h1>
-                <h2 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo magnam blanditiis laborum non eius nihil expedita eum dolorem qui perspiciatis, deserunt a. </h2>
+                <h2 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </h2>
             </div>
             <a class="text-white border-white border-solid border-2 px-10 py-5 transition-all duration-200 hover:bg-white hover:text-black" href="#">Read More</a>
         </div>
     </div>
 
     <!-- Hero Container -->
-    <div class="mt-[85vh] bg-hero-background py-10 px-20 lg:py-20 lg:px-32">
+    <div class="mt-[90vh] sm:mt-[100vh] bg-hero-background py-10 px-5 lg:py-20 lg:px-32">
         <div class="flex flex-col items-center mb-20">
             <h2 class="text-gold-text text-3xl font-bold">Your Neighborhood Cafe</h2>
             <div class="my-5" style="height: 3px; width: 50%; background-color: #c7a17c;"></div>
-            <p class="w-1/2 font-normal text-light-text">
+            <p class="w-full sm:w-1/4 font-normal text-light-text">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita eos accusantium temporibus cumque sit laborum nesciunt quam, qui delectus recusandae dolore facilis unde cum odit voluptatem, excepturi doloribus. Consequuntur, est? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur laudantium, aut dolorem enim quisquam laborum ad mollitia odit repellat? Sit excepturi tempore officiis similique quaerat libero id maxime ea quasi?
             </p>
             
         </div>
         <!-- Possible slide show here...-->
         
-        <div class="grid grid-cols-3 w-1/2 m-auto">
+        <div class="grid grid-cols-2 sm:grid-cols-3 sm:w-1/2 m-auto">
             <img class="" src="./src/images/grid-4.jpg" alt="No">
             <img class="" src="./src/images/grid-4.jpg" alt="No">
             <img class="" src="./src/images/grid-4.jpg" alt="No">
@@ -57,7 +63,7 @@
     </div>
 
     <!-- Second Image Break -->
-    <div class="flex flex-row items-center justify-center gap-20 h-[60vh]" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./src/images/second.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <div class="flex flex-row items-center justify-center gap-20 h-full" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./src/images/second.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
         <div class="text-white w-1/2 flex flex-col gap-8">
             <h3 class="text-3xl font-bold">
                 Coffee
