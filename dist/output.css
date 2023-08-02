@@ -723,6 +723,10 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -934,6 +938,10 @@ video {
   padding-left: 0.5rem;
 }
 
+.pt-10{
+  padding-top: 2.5rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1107,6 +1115,10 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:flex-row{
     flex-direction: row;
   }
@@ -1119,12 +1131,12 @@ video {
     justify-content: flex-start;
   }
 
-  .sm\:gap-8{
-    gap: 2rem;
-  }
-
   .sm\:gap-5{
     gap: 1.25rem;
+  }
+
+  .sm\:gap-8{
+    gap: 2rem;
   }
 
   .sm\:p-10{
@@ -1135,14 +1147,13 @@ video {
     padding: 5rem;
   }
 
+  .sm\:p-24{
+    padding: 6rem;
+  }
+
   .sm\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .sm\:py-0{
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 
   .sm\:pb-10{
