@@ -9,36 +9,41 @@
     </head>
     <body class="bg-hero-background font-poppins">
     
-    <!-- Navbar  -->
-    <nav class="flex flex-row justify-between px-10 py-10 pb-60  relative z-10 text-white text-2xl" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url('../images/nav-backdrop.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
-        <h1 class="">Coffee Shop</h1>
-        <ul class="flex flex-row gap-8">
-            <a href="../../index.html"><li>Home</li></a>
-            <a href="./about.html"><li>About Us</li></a>
-            <a href="./menu.html"><li>Menu</li></a>
-            <a href="./whats-new.html"><li>What's New</li></a>
-            <a href="./contact.html"><li>Contact</li></a>
-        </ul>
-        <div class="absolute top-1/2 left-1/2 font-bold text-4xl">Contact</div>
-    </nav>
+     <!-- Navbar  -->
+     <nav class="flex flex-row justify-between px-10 py-10 pb-60 relative z-10" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+     url('../images/nav-backdrop.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+         <h1 class="text-white text-2xl">Coffee Shop</h1>
+         <ul class="hidden sm:flex sm:flex-row sm:gap-8 text-white text-2xl">
+             <a href="../../index.html"><li>Home</li></a>
+             <a href="./about.html"><li>About Us</li></a>
+             <a href="./menu.html"><li>Menu</li></a>
+             <a href="./whats-new.html"><li>What's New</li></a>
+             <a href="./contact.html"><li>Contact</li></a>
+         </ul>
+         <div id="hamburger" class="flex flex-col gap-1 sm:hidden">
+             <span style="width: 32px; height: 3px; background: white;"></span>
+             <span style="width: 32px; height: 3px; background: white;"></span>
+             <span style="width: 32px; height: 3px; background: white;"></span>
+         </div>
+         <div class="absolute top-1/2 left-1/2 font-bold text-4xl text-white">Contact Us</div>
+     </nav>
 
-    <div id="contact-container" class="grid grid-cols-2 px-20 py-10 w-full">
-        <div id="contact-form" class="flex flex-col gap-3 p-10">
+    <div id="contact-container" class="grid grid-cols-1 sm:px-20 sm:py-10 w-full">
+        <div id="contact-form" class="flex flex-col gap-3 p-3 sm:p-10">
             <h1 class="text-3xl">Write Us</h1>
             <div style="height: 4px; width: 30%; background-color: #c7a17a;"></div>
             <p class="text-light-text font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil tenetur hic recusandae perspiciatis, error rem ipsam accusantium mollitia similique odio libero voluptatem, natus autem a consectetur, sapiente ut voluptatum.</p>
             <form class="flex flex-col items-start w-full gap-1">
                 <label class="font-medium" name="name">Name:</label>
-                <input type="text" class="w-96 py-1 px-3 placeholder-gold-text font-medium mb-3" placeholder="Your Name">
+                <input type="text" class="w-3/4 py-1 px-3 placeholder-gold-text font-medium mb-3" placeholder="Your Name">
                 <label>Email: </label>
-                <input type="text" class="w-96 py-1 px-3 placeholder-gold-text font-medium mb-3" placeholder="Your email">
+                <input type="text" class="w-3/4 py-1 px-3 placeholder-gold-text font-medium mb-3" placeholder="Your email">
                 <label>How can we help you?</label>
-                <textarea class="p-3 font-medium placeholder-gold-text w-3/4"  placeholder="Your Message"></textarea>
+                <textarea class="p-3 font-medium placeholder-gold-text w-full sm:w-3/4" rows="5" placeholder="Your Message"></textarea>
                 <button type="submit" class="bg-gold-text px-10 py-5 transition-all duration-200 text-white mt-5 hover:bg-black">Read More</button>
             </form>
         </div>
-        <div id="contact-information" class="flex flex-col gap-3 p-10 w-full">
+        <div id="contact-information" class="flex flex-col gap-3 p-5 py-10 w-full">
             <h1 class="text-3xl">Contact Information</h1>
             <div class="" style="height: 4px; width: 30%; background-color: #c7a17a;"></div>
             <p class="text-light-text font-normal mb-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, vitae. Ex, sunt earum? Hic sit ex nemo, omnis sunt minima, velit labore quam est ad magni quod? Itaque, illum asperiores.</p>
@@ -78,82 +83,86 @@
     </div>
 
     
-    <!-- Footer Section  -->
-    <footer class="bg-footer min-h-fit flex flex-row justify-around text-white py-16 px-20">
-        <div class="flex flex-row justify-around">
-            <div class="">
-                <img src="../images/home-icon.png">
+   <!-- Footer Section  -->
+   <footer class="bg-footer min-h-fit flex flex-col sm:flex-row justify-around text-white py-16 px-20">
+    <div class="flex flex-row justify-around">
+        <div class="">
+            <img src="../images/home-icon.png">
+        </div>
+    </div>
+    <div class="flex flex-col py-10">
+        <h1 class="text-2xl font-bold mb-5 uppercase text-center sm:text-left">Links</h1>
+        <ul class="flex flex-col items-center sm:items-start gap-3">
+            <a class="text-2xl transition-colors duration-200 hover:cursor-pointer hover:text-gold-text min-w-fit" 
+            href="./index.html"><li>Home</li></a>
+            <a class="text-2xl transition-colors duration-200 hover:cursor-pointer hover:text-gold-text min-w-fit" 
+            href="./src/pages/about.html"><li>About Us</li></a>
+            <a class="text-2xl transition-colors duration-200 hover:cursor-pointer hover:text-gold-text min-w-fit" 
+            href="./src/pages/menu.html"><li>Menu</li></a>
+            <a class="text-2xl transition-colors duration-200 hover:cursor-pointer hover:text-gold-text min-w-fit" 
+            href="./src/pages/whats-new.html"><li>What's New</li></a>
+            <a class="text-2xl transition-colors duration-200 hover:cursor-pointer hover:text-gold-text min-w-fit" 
+            href="./src/pages/contact.html"><li>Contact</li></a>
+        </ul>
+    </div>
+    <div class="py-10">
+        <h1 class="text-2xl font-bold uppercase mb-5 text-center">Hours</h1>
+        <div class="flex flex-col gap-3 w-full">
+            <div class="grid grid-cols-3 w-full">
+                <span class="min-w-fit mr-2">Monday</span>
+                <span class="border-b-[1px] border-b-slate-100 "></span>
+                <span class="text-gold-text pl-2">Closed</span>
+            </div>
+            <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
+                <span class="min-w-fit mr-2">Tuesday</span>
+                <span class="border-b-[1px] border-b-slate-100 w-full"></span>
+                <span class="text-gold-text pl-2">8 AM - 8 PM</span>
+            </div>
+            <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
+                <span class="min-w-fit mr-2">Monday</span>
+                <span class="border-b-[1px] border-b-slate-100 w-full"></span>
+                <span class="text-gold-text pl-2">8 AM - 8 PM</span>
+            </div>
+            <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
+                <span class="min-w-fit mr-2">Monday</span>
+                <span class="border-b-[1px] border-b-slate-100 w-full"></span>
+                <span class="text-gold-text pl-2">8 AM - 8 PM</span>
+            </div>
+            <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
+                <span class="min-w-fit mr-2">Monday</span>
+                <span class="border-b-[1px] border-b-slate-100 w-full"></span>
+                <span class="text-gold-text pl-2">8 AM - 8 PM</span>
+            </div>
+            <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
+                <span class="min-w-fit mr-2">Monday</span>
+                <span class="border-b-[1px] border-b-slate-100 w-full"></span>
+                <span class="text-gold-text pl-2">8 AM - 8 PM</span>
+            </div>
+            <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
+                <span class="min-w-fit mr-2">Monday</span>
+                <span class="border-b-[1px] border-b-slate-100 w-full"></span>
+                <span class="text-gold-text pl-2">8 AM - 8 PM</span>
             </div>
         </div>
-        <div class="flex flex-col">
-            <h1 class="text-2xl font-bold mb-5 uppercase">Links</h1>
-            <ul class="flex flex-col gap-3">
-                <a class="transition-colors duration-200 hover:cursor-pointer hover:text-gold-text min-w-fit" 
-                href="../../index.html"><li>Home</li></a>
-                <a class="transition-colors duration-200 hover:cursor-pointer hover:text-gold-text min-w-fit" href="./about.html"><li>About Us</li></a>
-                <a class="transition-colors duration-200 hover:cursor-pointer hover:text-gold-text min-w-fit" href="./menu.html"><li>Menu</li></a>
-                <a class="transition-colors duration-200 hover:cursor-pointer hover:text-gold-text min-w-fit" href="./whats-new.html"><li>What's New</li></a>
-                <a class="transition-colors duration-200 hover:cursor-pointer hover:text-gold-text min-w-fit" href="./contact.html"><li>Contact</li></a>
-            </ul>
+        
+        
+    </div>
+    <div class="py-10 ">
+        <h1 class="text-2xl font-bold uppercase text-center sm:text-left pb-5">Contact</h1>
+        <div class="py-3">
+            <h2 class="font-medium text-xl">Email</h2>
+            <a class="font-normal hover:cursor-pointer transition-all duration-200 hover:text-gold-text
+            underline" href="">coffee@coffee.com</a>
         </div>
-        <div class="hours-container">
-            <h1 class="text-2xl font-bold uppercase mb-5 text-center">Hours</h1>
-            <div class="flex flex-col gap-3 w-full">
-                <div class="grid grid-cols-3 w-full">
-                    <span class="min-w-fit mr-2">Monday</span>
-                    <span class="border-b-[1px] border-b-slate-100 "></span>
-                    <span class="text-gold-text pl-2">Closed</span>
-                </div>
-                <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
-                    <span class="min-w-fit mr-2">Tuesday</span>
-                    <span class="border-b-[1px] border-b-slate-100 w-full"></span>
-                    <span class="text-gold-text pl-2">8 AM - 8 PM</span>
-                </div>
-                <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
-                    <span class="min-w-fit mr-2">Monday</span>
-                    <span class="border-b-[1px] border-b-slate-100 w-full"></span>
-                    <span class="text-gold-text pl-2">8 AM - 8 PM</span>
-                </div>
-                <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
-                    <span class="min-w-fit mr-2">Monday</span>
-                    <span class="border-b-[1px] border-b-slate-100 w-full"></span>
-                    <span class="text-gold-text pl-2">8 AM - 8 PM</span>
-                </div>
-                <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
-                    <span class="min-w-fit mr-2">Monday</span>
-                    <span class="border-b-[1px] border-b-slate-100 w-full"></span>
-                    <span class="text-gold-text pl-2">8 AM - 8 PM</span>
-                </div>
-                <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
-                    <span class="min-w-fit mr-2">Monday</span>
-                    <span class="border-b-[1px] border-b-slate-100 w-full"></span>
-                    <span class="text-gold-text pl-2">8 AM - 8 PM</span>
-                </div>
-                <div class="grid grid-cols-3 items-end mt-auto mr-auto w-full">
-                    <span class="min-w-fit mr-2">Monday</span>
-                    <span class="border-b-[1px] border-b-slate-100 w-full"></span>
-                    <span class="text-gold-text pl-2">8 AM - 8 PM</span>
-                </div>
-            </div>
-            
-            
+        <div class="py-3">
+            <h2 class="font-medium text-xl">Phone Number</h2>
+            <a class="font-normal hover:cursor-pointer transition-all duration-200 hover:text-gold-text" href="">555-555-5555</a>
         </div>
-        <div class="grid grid-col ">
-            <h1 class="text-2xl font-bold uppercase">Contact</h1>
-            <div class="">
-                <h2 class="font-medium text-xl">Email</h2>
-                <a class="font-normal hover:cursor-pointer transition-all duration-200 hover:text-gold-text
-                underline" href="">coffee@coffee.com</a>
-            </div>
-            <div class="">
-                <h2 class="font-medium text-xl">Phone Number</h2>
-                <a class="font-normal hover:cursor-pointer transition-all duration-200 hover:text-gold-text" href="">555-555-5555</a>
-            </div>
-            <div class="">
-                <h2 class="font-medium text-xl">Address</h2>
-                <a href="">123 Direction Lane<br>Omaha, NE 68116</a>
-            </div>
+        <div class="py-3">
+            <h2 class="font-medium text-xl">Address</h2>
+            <a href="">123 Direction Lane<br>Omaha, NE 68116</a>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>
