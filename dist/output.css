@@ -572,8 +572,8 @@ video {
   top: 3rem;
 }
 
-.top-32{
-  top: 8rem;
+.top-24{
+  top: 6rem;
 }
 
 .top-40{
@@ -582,14 +582,6 @@ video {
 
 .top-80{
   top: 20rem;
-}
-
-.top-20{
-  top: 5rem;
-}
-
-.top-24{
-  top: 6rem;
 }
 
 .z-10{
@@ -621,11 +613,6 @@ video {
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-10{
@@ -937,10 +924,6 @@ video {
 
 .pl-2{
   padding-left: 0.5rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
 }
 
 .text-center{
